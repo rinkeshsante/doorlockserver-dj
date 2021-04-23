@@ -7,10 +7,11 @@ from .face import compareFacePoinst, makeFacePoints
 
 
 def index(request):
-    res = """<h3>Hello , This application is server for RFID + face detection/ password security system</h3>
-    login at ,<a  href="admin">login</a>
-    """
-    return HttpResponse(res)
+    return render(request, 'home.html')
+
+
+def dashBaord(request):
+    return render(request, 'data/dashboard.html')
 
 
 def verifySystem(request):

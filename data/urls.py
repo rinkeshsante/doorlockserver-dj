@@ -6,6 +6,9 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     # post testin if server is working up
+
+    path('dashboard/', views.dashBaord, name='dashboard'),
+
     path('api/', views.verifySystem, name='test-api'),
     # post your rfid no here
     path('api/rfid/', views.verifyRFID, name='rfid-api'),
